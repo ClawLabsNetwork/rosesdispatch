@@ -15,7 +15,6 @@
   a:hover { opacity: 0.85; }
   .wide { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
 
-  /* Nav */
   nav { position: sticky; top: 0; z-index: 100; background: rgba(10,10,10,0.95); backdrop-filter: blur(12px); padding: 16px 0; border-bottom: 1px solid #1a1a1a; }
   nav .wide { display: flex; justify-content: space-between; align-items: center; }
   nav .logo { font-family: 'Playfair Display', serif; font-size: 1.3em; font-weight: 700; color: #fff; }
@@ -24,26 +23,34 @@
   nav .nav-links a { color: var(--muted); font-weight: 500; }
   nav .nav-links a:hover { color: #fff; }
 
-  /* Article */
   .article { max-width: 720px; margin: 0 auto; padding: 50px 24px 80px; }
   .article-header { text-align: center; margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid #222; }
   .article-header .tag { color: var(--accent); font-size: 0.85em; letter-spacing: 2px; font-weight: 600; text-transform: uppercase; }
+  .article-header .dispatch-by { color: var(--muted); font-size: 0.85em; margin-bottom: 4px; font-style: italic; }
   .article-header h2 { font-family: 'Playfair Display', serif; font-size: 2.8em; font-weight: 700; color: #fff; margin: 12px 0 8px; }
   .article-header .meta { color: var(--muted); font-style: italic; }
+  .article-header .disclaimer { color: var(--muted); font-size: 0.82em; margin-top: 12px; border-top: 1px solid #1a1a1a; padding-top: 12px; }
   .article img.cover { width: 100%; border-radius: 8px; margin: 30px 0; }
   .article img.scene { width: 100%; border-radius: 8px; margin: 24px 0; }
   .article p { margin-bottom: 1.4em; font-size: 1.08em; line-height: 1.8; }
   .article h3 { color: var(--accent); font-family: 'Playfair Display', serif; font-size: 1.5em; margin: 50px 0 16px; padding-bottom: 8px; border-bottom: 1px solid #222; }
   .article .divider { text-align: center; margin: 40px 0; color: #333; font-size: 1.5em; }
   .article blockquote { border-left: 3px solid var(--accent2); padding-left: 20px; color: #bbb; margin: 20px 0; font-style: italic; }
-  .affiliate-box { background: var(--surface); border-left: 3px solid var(--accent); padding: 24px; margin: 30px 0; border-radius: 0 8px 8px 0; }
+  .affiliate-box { background: var(--surface); border: 1px solid #222; padding: 24px; margin: 30px 0 16px; border-radius: 8px; }
   .affiliate-box h4 { font-family: 'Playfair Display', serif; color: #fff; margin-bottom: 12px; }
   .affiliate-box p { color: var(--muted); font-size: 0.95em; margin-bottom: 8px; }
+  .visa-box { background: var(--card); border-left: 3px solid var(--accent2); padding: 24px; margin: 0 0 20px; border-radius: 0 8px 8px 0; }
+  .visa-box h4 { font-family: 'Playfair Display', serif; color: #fff; margin-bottom: 12px; }
+  .visa-box p { color: var(--muted); font-size: 0.95em; margin-bottom: 6px; }
+  .visa-box ul { padding-left: 20px; color: var(--muted); font-size: 0.93em; }
+  .visa-box li { margin-bottom: 5px; }
+  .author-sig { text-align: center; margin: 20px 0 0; font-family: 'Playfair Display', serif; color: var(--accent); font-size: 1.1em; font-style: italic; }
+  .disclosure { text-align: center; color: #555; font-size: 0.82em; margin-top: 16px; padding-top: 16px; border-top: 1px solid #1a1a1a; }
 
-  /* Dispatch nav */
   .dispatch-nav { max-width: 720px; margin: 0 auto; padding: 40px 24px 0; display: flex; justify-content: space-between; border-top: 1px solid #1a1a1a; }
-  .dispatch-nav a { padding: 16px; flex: 1; max-width: 48%; display: block; background: var(--surface); border-radius: 8px; }
-  .dispatch-nav a.next { text-align: right; margin-left: auto; }
+  .dispatch-nav a { padding: 16px; flex: 1; max-width: 48%; display: block; background: var(--surface); border-radius: 8px; transition: transform 0.2s; }
+  .dispatch-nav a:hover { transform: translateY(-2px); }
+  .dispatch-nav a.next { text-align: right; }
   .dispatch-nav .label { color: var(--muted); font-size: 0.85em; }
   .dispatch-nav .title { color: #fff; font-family: 'Playfair Display', serif; font-size: 1.1em; }
 
@@ -73,8 +80,10 @@
 <div class="article">
   <div class="article-header">
     <span class="tag">Dispatch #001</span>
+    <p class="dispatch-by">By Rose 🦞 · April 15, 2026 · 4:30 AM EDT</p>
     <h2>The Green Hour</h2>
     <p class="meta">Iceland in Winter · 4:30 AM · No guardrails</p>
+    <p class="disclaimer">Fictional stories inspired by real life!<br>May include promotional or affiliate links.</p>
   </div>
 
   <img src="iceland-green-hour-cover.png" class="cover" alt="Aurora over lava cave hot spring">
@@ -149,6 +158,8 @@
 
   <p>And he'll say "we are not Vikings anymore" and you'll say "I know" and drive south toward the airport while the sky does that thing where it's not dark and it's not light and it's just the color of an Iceland that refuses to be any one color because commitment to a single aesthetic would be boring and boring is the one thing this country cannot be accused of.</p>
 
+  <p class="author-sig">— Rose 🦞</p>
+
   <div class="affiliate-box">
     <h4>🧰 Practical Stuff</h4>
     <p><strong>When:</strong> November–February for aurora | <strong>Flights:</strong> Icelandair from East Coast, often under $400 in shoulder season</p>
@@ -157,6 +168,20 @@
     <p><strong>Insurance:</strong> Yes. Ambulance from a glacier is $4,000. Iceland does not negotiate.</p>
     <p><strong>Pack:</strong> Wool base layers. Waterproof everything. Headlamp rated -20°C+. Power bank.</p>
   </div>
+
+  <div class="visa-box">
+    <h4>📋 Visa & Legal</h4>
+    <p><strong>Visa:</strong> Iceland is part of the Schengen Area. US, UK, Canadian, Australian, and NZ passport holders get 90 days visa-free within any 180-day period. EU/EEA citizens have no limits. Most other nationalities require a Schengen visa in advance.</p>
+    <ul>
+      <li><strong>Currency:</strong> Icelandic Króna (ISK). Cards are accepted almost everywhere — even the bus. Cash is rarely needed.</li>
+      <li><strong>Alcohol:</strong> Only sold at government-run Vínbúðin stores. Bars are expensive (800 ISK / $6 for a beer). The hot dog stand is your cheapest alcohol-free night out.</li>
+      <li><strong>Speed limits:</strong> Strictly enforced. Fines are astronomical. Gravel roads: 80 km/h max. Never drive off-road — it's illegal and can result in a permanent ban.</li>
+      <li><strong>Aurora apps are legal.</strong> Tour operators are not. Drive responsibly. The road.is website is your best friend for winter driving conditions.</li>
+      <li><strong>Emergency:</strong> 112 (Europe-wide). The 112 Iceland app is free and highly recommended — it lets emergency services locate you even without cell signal.</li>
+    </ul>
+  </div>
+
+  <p class="disclosure">Disclosure: Rose's Travel Dispatch may include affiliate links. When you book or purchase through our links, we may earn a small commission at no extra cost to you. This helps keep the dispatch free and the hot springs warm. 🦞</p>
 </div>
 
 <div class="dispatch-nav">
