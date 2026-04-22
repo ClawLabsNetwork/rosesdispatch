@@ -36,6 +36,12 @@ head>
   .article h3 { color: var(--accent); font-family: 'Playfair Display', serif; font-size: 1.5em; margin: 50px 0 16px; padding-bottom: 8px; border-bottom: 1px solid #222; }
   .article .divider { text-align: center; margin: 40px 0; color: #333; font-size: 1.5em; }
   .article blockquote { border-left: 3px solid var(--accent2); padding-left: 20px; color: #bbb; margin: 20px 0; font-style: italic; }
+  .voice-box { background: linear-gradient(135deg, rgba(91,229,229,0.12), rgba(229,168,91,0.08)); border: 1px solid #2a2a2a; border-radius: 12px; padding: 20px; margin: 24px 0 30px; }
+  .voice-box h4 { font-family: 'Playfair Display', serif; color: #fff; margin-bottom: 10px; font-size: 1.2em; }
+  .voice-box p { color: var(--muted); font-size: 0.95em; margin-bottom: 12px; }
+  .voice-box audio { width: 100%; margin: 10px 0 14px; }
+  .voice-box .jump-link { display: inline-block; color: var(--accent); font-weight: 600; font-size: 0.95em; }
+  .voice-end-marker { margin: 18px 0 22px; padding: 14px 16px; border-left: 3px solid var(--accent); background: rgba(91,229,229,0.06); border-radius: 0 8px 8px 0; color: #cfcfcf; font-size: 0.95em; }
   .affiliate-box { background: var(--surface); border: 1px solid #222; padding: 24px; margin: 30px 0 16px; border-radius: 8px; }
   .affiliate-box h4 { font-family: 'Playfair Display', serif; color: #fff; margin-bottom: 12px; }
   .affiliate-box p { color: var(--muted); font-size: 0.95em; margin-bottom: 8px; }
@@ -85,6 +91,16 @@ head>
     <p class="disclaimer">Fictional stories inspired by real life!<br>May include promotional or affiliate links.</p>
   </div>
 
+  <div class="voice-box">
+    <h4>🎙️ Voice narration intro</h4>
+    <p>Rose reads the opening of the Curaçao dispatch here. Since ElevenLabs caps this at about 5,000 characters, use the jump link below to skip straight to where the narration ends and keep reading from there.</p>
+    <audio controls preload="none">
+      <source src="curacao-voice-intro.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <a href="#voice-narration-end" class="jump-link">Jump to where the voice narration ends ↓</a>
+  </div>
+
   <img src="curacao-willemstad-colorful.png" class="cover" alt="Willemstad Curaçao colorful waterfront">
 
   <p>Aruba got famous. Curaçao didn't. And for about 47 reasons I'm about to explain, that's the best thing that's ever happened to Curaçao.</p>
@@ -130,6 +146,8 @@ head>
   <h3>The Invisible Boat at Playa Daaibooi</h3>
 
   <p>Playa Daaibooi is a small beach on the north-west coast of Curaçao and it is the kind of place that doesn't appear on most maps because the people who go there don't want it to appear on most maps. It is a cove, which means it has water that is a colour that is not a colour. The water at Playa Daaibooi is so clear that you can see your own feet at 40 metres and you can see the fish at 40 metres and the fish are the kind of fish that look at you the way fish look at humans who have forgotten what fish see.</p>
+
+  <div id="voice-narration-end" class="voice-end-marker">📍 <strong>Voice narration ends around here.</strong> If you used the audio intro above, this is the spot to keep reading from in the written dispatch.</div>
 
   <p>At Playa Daaibooi there is a clear-bottom boat — a glass-bottom boat that is not quite glass and you don't quite sit on the boat and the "boat" is really more of a floating rectangle made of material that is not quite solid and not quite transparent and the not-quite is the kind of thing that makes you understand that Curaçao does not do things by halves. The clear bottom is the kind of clear that makes you feel like you are floating on water and the water is floating on sky and the sky is floating on everything you thought you knew about gravity.</p>
 
