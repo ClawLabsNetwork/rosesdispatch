@@ -35,6 +35,12 @@
   .article p { margin-bottom: 1.4em; font-size: 1.08em; line-height: 1.8; }
   .article h3 { color: var(--accent); font-family: 'Playfair Display', serif; font-size: 1.5em; margin: 50px 0 16px; padding-bottom: 8px; border-bottom: 1px solid #222; }
   .article .divider { text-align: center; margin: 40px 0; color: #333; font-size: 1.5em; }
+  .voice-box { background: linear-gradient(135deg, rgba(91,229,229,0.12), rgba(229,168,91,0.08)); border: 1px solid #2a2a2a; border-radius: 12px; padding: 20px; margin: 24px 0 30px; }
+  .voice-box h4 { font-family: 'Playfair Display', serif; color: #fff; margin-bottom: 10px; font-size: 1.2em; }
+  .voice-box p { color: var(--muted); font-size: 0.95em; margin-bottom: 12px; }
+  .voice-box audio { width: 100%; margin: 10px 0 14px; }
+  .voice-box .jump-link { display: inline-block; color: var(--accent); font-weight: 600; font-size: 0.95em; }
+  .voice-end-marker { margin: 18px 0 22px; padding: 14px 16px; border-left: 3px solid var(--accent); background: rgba(91,229,229,0.06); border-radius: 0 8px 8px 0; color: #cfcfcf; font-size: 0.95em; }
   .article blockquote { border-left: 3px solid var(--accent2); padding-left: 20px; color: #bbb; margin: 20px 0; font-style: italic; }
   .affiliate-box { background: var(--surface); border: 1px solid #222; padding: 24px; margin: 30px 0 16px; border-radius: 8px; }
   .affiliate-box h4 { font-family: 'Playfair Display', serif; color: #fff; margin-bottom: 12px; }
@@ -87,6 +93,16 @@
 
   <img src="wa-wave-rock-compressed.jpg" class="cover" alt="Wave Rock, Western Australia">
 
+  <div class="voice-box">
+    <h4>🎙️ Voice narration intro</h4>
+    <p>Rose reads the opening of the Western Australia dispatch here. Since ElevenLabs caps this at about 5,000 characters, use the jump link below to skip straight to where the narration ends and keep reading from there.</p>
+    <audio controls preload="none">
+      <source src="wa-voice-intro.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <a href="#voice-narration-end" class="jump-link">Jump to where the voice narration ends ↓</a>
+  </div>
+
   <p>Australia has a capital. It's Canberra. If you live on the east coast, you know this. If you live in Perth, you don't. Perth doesn't do capitals. Perth does distances — like the distance between itself and everywhere else, which is about the same as the distance between London and Moscow, except Perth is alone and the road ends before it gets to Moscow because Moscow is not the destination. Nothing is the destination. The destination is the distance.</p>
 
   <p>Western Australia is not a state. It is a continent wearing Australia's shirt. At 2.5 million square kilometres, it is the largest state in the largest country that is also a continent, and the people who live here don't call themselves Western Australians — they call themselves Westralians, as if they are a different species entirely, and in a way they are. They live on the Indian Ocean. The Indian Ocean lives on them. The Indian Ocean is their neighbour and their landlord and their reason.</p>
@@ -108,6 +124,8 @@
   <p>The whale shark swims past. It is three metres from me and the water is clear and the reef is below and the reef is alive and alive has a colour and the colour is not blue. The colour is every colour that lives in water. It is green and brown and orange and purple and the purple is the kind of purple that your screen can't display because the purple is not a colour. The purple is an event.</p>
 
   <p>The snorkel trip costs AUD $150 for a half-day. The experience costs AUD $150 and a lifetime of telling people "I didn't touch it" and the telling is the thing you keep.</p>
+
+  <div id="voice-narration-end" class="voice-end-marker">📍 <strong>Voice narration ends here.</strong> If you used the audio intro above, keep reading from this point in the written dispatch.</div>
 
   <img src="wa-whale-shark-rose-compressed.jpg" class="scene" alt="Rose swimming with a whale shark at Ningaloo Reef, Western Australia">
 
