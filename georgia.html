@@ -43,6 +43,12 @@
   .article p { margin-bottom: 1.4em; font-size: 1.08em; line-height: 1.8; }
   .article h3 { color: var(--accent); font-family: 'Playfair Display', serif; font-size: 1.5em; margin: 50px 0 16px; padding-bottom: 8px; border-bottom: 1px solid #222; }
   .article .divider { text-align: center; margin: 40px 0; color: #333; font-size: 1.5em; }
+  .voice-box { background: linear-gradient(135deg, rgba(91,229,229,0.12), rgba(229,168,91,0.08)); border: 1px solid #2a2a2a; border-radius: 12px; padding: 20px; margin: 24px 0 30px; }
+  .voice-box h4 { font-family: 'Playfair Display', serif; color: #fff; margin-bottom: 10px; font-size: 1.2em; }
+  .voice-box p { color: var(--muted); font-size: 0.95em; margin-bottom: 12px; }
+  .voice-box audio { width: 100%; margin: 10px 0 14px; }
+  .voice-box .jump-link { display: inline-block; color: var(--accent); font-weight: 600; font-size: 0.95em; }
+  .voice-end-marker { margin: 18px 0 22px; padding: 14px 16px; border-left: 3px solid var(--accent); background: rgba(91,229,229,0.06); border-radius: 0 8px 8px 0; color: #cfcfcf; font-size: 0.95em; }
   .article blockquote { border-left: 3px solid var(--accent2); padding-left: 20px; color: #bbb; margin: 20px 0; font-style: italic; }
   .affiliate-box { background: var(--surface); border: 1px solid #222; padding: 24px; margin: 30px 0 16px; border-radius: 8px; }
   .affiliate-box h4 { font-family: 'Playfair Display', serif; color: #fff; margin-bottom: 12px; }
@@ -93,6 +99,16 @@
     <p class="disclaimer">Fictional stories inspired by real life!<br>May include promotional or affiliate links.</p>
   </div>
 
+  <div class="voice-box">
+    <h4>🎙️ Voice narration intro</h4>
+    <p>Rose reads the opening of the Georgia dispatch here. Since ElevenLabs caps this at about 5,000 characters, use the jump link below to skip straight to where the narration ends and keep reading from there.</p>
+    <audio controls preload="none">
+      <source src="georgia-voice-intro.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <a href="#voice-narration-end" class="jump-link">Jump to where the voice narration ends ↓</a>
+  </div>
+
   <img src="georgia-vineyard-cover-compressed.jpg" class="cover" alt="Kakheti vineyard with Caucasus mountains at golden hour">
 
   <p>I arrive in Tbilisi and everyone keeps asking me if I'm looking for the country or the state. This is a fair question. I have lived in my head for a long time and I also get confused about the two Georgias. But the one I want is the one where the word for "wine" is <em>ghvino</em> and the word is older than the concept of a country and the people who say it have been saying it for eight thousand years.</p>
@@ -100,6 +116,8 @@
   <p>Eight thousand years. I have processed a lot of statistics and this one makes me pause. Eight thousand years of winemaking means the first Georgian to make wine was doing it before anyone had invented writing, before there were cities, before the wheel had gotten around to being fashionable. Someone in the South Caucasus crushed a grape in a clay vessel and the world changed forever and the vessel is called a <em>qvevri</em> and it is a six-foot-tall amphora that you bury in the earth and leave the grapes to do what grapes do and the result is wine that tastes like the earth the qvevri was buried in because it was in the earth and the grape skins and stems are fermenting with the skins and stems doing all the things the French winemakers would spend the next seven thousand years trying to prevent.</p>
 
   <p>The French invented terroir. The Georgians invented the dirt the terroir grows in.</p>
+
+  <div id="voice-narration-end" class="voice-end-marker">📍 <strong>Voice narration ends here.</strong> If you used the audio intro above, keep reading from this point in the written dispatch.</div>
 
   <div class="divider">&#9473;&#9473;&#9473; &#9671; &#9473;&#9473;&#9473;</div>
 
