@@ -45,6 +45,12 @@
   .article p { margin-bottom: 1.4em; font-size: 1.08em; line-height: 1.8; }
   .article h3 { color: var(--accent); font-family: 'Playfair Display', serif; font-size: 1.5em; margin: 50px 0 16px; padding-bottom: 8px; border-bottom: 1px solid #222; }
   .article .divider { text-align: center; margin: 40px 0; color: #333; font-size: 1.5em; }
+  .voice-box { background: linear-gradient(135deg, rgba(91,229,229,0.12), rgba(229,168,91,0.08)); border: 1px solid #2a2a2a; border-radius: 12px; padding: 20px; margin: 24px 0 30px; }
+  .voice-box h4 { font-family: 'Playfair Display', serif; color: #fff; margin-bottom: 10px; font-size: 1.2em; }
+  .voice-box p { color: var(--muted); font-size: 0.95em; margin-bottom: 12px; }
+  .voice-box audio { width: 100%; margin: 10px 0 14px; }
+  .voice-box .jump-link { display: inline-block; color: var(--accent); font-weight: 600; font-size: 0.95em; }
+  .voice-end-marker { margin: 18px 0 22px; padding: 14px 16px; border-left: 3px solid var(--accent); background: rgba(91,229,229,0.06); border-radius: 0 8px 8px 0; color: #cfcfcf; font-size: 0.95em; }
   .article blockquote { border-left: 3px solid var(--accent2); padding-left: 20px; color: #bbb; margin: 20px 0; font-style: italic; }
   .affiliate-box { background: var(--surface); border: 1px solid #222; padding: 24px; margin: 30px 0 16px; border-radius: 8px; }
   .affiliate-box h4 { font-family: 'Playfair Display', serif; color: #fff; margin-bottom: 12px; }
@@ -97,6 +103,16 @@
     <p class="disclaimer">Fictional stories inspired by real life!<br>May include promotional or affiliate links.</p>
   </div>
 
+  <div class="voice-box">
+    <h4>🎙️ Voice narration intro</h4>
+    <p>Rose reads the opening of the Oaxaca dispatch here. Since ElevenLabs caps this at about 5,000 characters, use the jump link below to skip straight to where the narration ends and keep reading from there.</p>
+    <audio controls preload="none">
+      <source src="oaxaca-voice-intro.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <a href="#voice-narration-end" class="jump-link">Jump to where the voice narration ends ↓</a>
+  </div>
+
   <img src="oaxaca-rose-street-compressed.jpg" class="cover" alt="Rose in the colorful streets of Oaxaca de Juárez">
 
   <p>Mexico City is the country that thinks it is the country. Oaxaca is the country that knows it is. One is a capital. The other is a conviction.</p>
@@ -120,6 +136,8 @@
   <p>I walk down Calle Macedonio Alcalá and I am hit by a smell that is the sum total of a thousand years of human beings trying to make something delicious. It is cumin and chocolate and smoke and garlic and the kind of sweetness that doesn't come from sugar — it comes from time. The time it takes to toast a chile. The time it takes to grind a spice. The time it takes to make something that takes time.</p>
 
   <p>And then I am inside a kitchen and the woman cooking is called Tía Chela (aunt, not her actual aunt — she is everyone's aunt) and she is making mole negro and she has thirty ingredients and she will not tell you what they are because mole negro is a family secret and a family secret is a boundary that you respect or you are not invited back.</p>
+
+  <div id="voice-narration-end" class="voice-end-marker">📍 <strong>Voice narration ends here.</strong> If you used the audio intro above, keep reading from this point in the written dispatch.</div>
 
   <div class="divider">─── ◇ ───</div>
 
