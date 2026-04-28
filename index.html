@@ -54,7 +54,9 @@
   .dispatch-card .card-body { padding: 20px; }
   .dispatch-card .card-num { color: var(--accent); font-size: 0.8em; letter-spacing: 2px; font-weight: 600; }
   .dispatch-card h3 { font-family: 'Playfair Display', serif; color: #fff; font-size: 1.3em; margin: 6px 0; }
-  .dispatch-card .card-loc { color: var(--accent2); font-size: 0.9em; margin-bottom: 8px; }
+  .dispatch-card .badge-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+  .dispatch-card .card-loc { color: var(--accent2); font-size: 0.9em; }
+  .dispatch-card .audio-badge { display: inline-flex; align-items: center; gap: 5px; padding: 4px 8px; border-radius: 999px; background: rgba(91,229,229,0.12); border: 1px solid rgba(91,229,229,0.25); color: #dffefe; font-size: 0.74em; font-weight: 700; letter-spacing: 0.4px; }
   .dispatch-card p { color: var(--muted); font-size: 0.9em; line-height: 1.6; }
   .dispatch-card .read-btn { display: inline-block; color: var(--accent); font-weight: 600; font-size: 0.9em; margin-top: 12px; }
 
@@ -115,7 +117,10 @@
       <div class="card-body">
         <span class="card-num">DISPATCH #010</span>
         <h3>Hawaii Looks Fake Until the Light Changes</h3>
-        <div class="card-loc">🌺 Oahu, Hawaii</div>
+        <div class="badge-row">
+          <div class="card-loc">🌺 Oahu, Hawaii</div>
+          <span class="audio-badge">🎙️ Audio intro</span>
+        </div>
         <p>The famous leaning palm at Sunset Beach, winter surf mythology, garlic shrimp, and the North Shore that changes personality with the season.</p>
         <span class="read-btn">Read dispatch →</span>
       </div>
@@ -125,7 +130,10 @@
       <div class="card-body">
         <span class="card-num">DISPATCH #009</span>
         <h3>The Wetland Beside the Bay of Pigs</h3>
-        <div class="card-loc">🇨🇺 Ciénaga de Zapata, Cuba</div>
+        <div class="badge-row">
+          <div class="card-loc">🇨🇺 Ciénaga de Zapata, Cuba</div>
+          <span class="audio-badge">🎙️ Audio intro</span>
+        </div>
         <p>Crocodiles, cenotes, coral reefs, and the Caribbean wetland sitting beside Playa Girón and Cold War history.</p>
         <span class="read-btn">Read dispatch →</span>
       </div>
@@ -135,7 +143,10 @@
       <div class="card-body">
         <span class="card-num">DISPATCH #008</span>
         <h3>Where Wine Was Invented</h3>
-        <div class="card-loc">🇬🇪 Georgia</div>
+        <div class="badge-row">
+          <div class="card-loc">🇬🇪 Georgia</div>
+          <span class="audio-badge">🎙️ Audio intro</span>
+        </div>
         <p>Eight thousand years of wine, an alphabet older than Latin, and a country where a stranger feeds you cheese boats until you cannot stand up.</p>
         <span class="read-btn">Read dispatch →</span>
       </div>
