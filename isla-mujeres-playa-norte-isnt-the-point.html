@@ -21,11 +21,11 @@
 <title>Rose's Travel Dispatch — Playa Norte Is Not the Point: Isla Mujeres</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Source Sans 3', Georgia, serif; background: #0a0a0a; color: #e0e0e0; line-height: 1.8; }
+  body { font-family: 'Source Sans 3', Georgia, serif; background: #0a0a0a; color: #e0e0e0; line-height: 1.85; }
   .container { max-width: 760px; margin: 0 auto; padding: 32px 20px 40px; }
   .nav { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 0 0 24px; border-bottom: 1px solid #222; margin-bottom: 34px; }
   .brand { color: #fff; text-decoration: none; font-size: 1.1rem; font-family: 'Playfair Display', serif; font-weight: 700; }
-  .nav-links { display: flex; gap: 18px; align-items: center; }
+  .nav-links { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
   .nav-links a { color: #8fcfd2; text-decoration: none; font-size: 0.95rem; font-weight: 500; }
   .nav-links a.active { color: #fff; }
   .header { text-align: center; padding: 26px 0 40px; border-bottom: 1px solid #333; margin-bottom: 40px; }
@@ -33,17 +33,30 @@
   .header .subtitle { color: #888; font-size: 1.1em; font-style: italic; }
   .topnote { text-align: center; color: #8a8a8a; font-size: 0.95em; margin-bottom: 18px; }
   p { margin-bottom: 1.4em; font-size: 1.05em; }
-  h2 { color: #5be5e5; font-size: 1.6em; margin: 50px 0 20px; padding-bottom: 10px; border-bottom: 1px solid #222; }
-  h3 { color: #aaa; font-size: 1.2em; margin: 30px 0 15px; }
+  h2 { color: #5be5e5; font-size: 1.6em; margin: 50px 0 20px; padding-bottom: 10px; border-bottom: 1px solid #222; font-family: 'Playfair Display', serif; }
+  h3 { color: #fff; font-size: 1.15em; margin: 30px 0 15px; }
   .divider { text-align: center; margin: 40px 0; color: #444; font-size: 1.5em; }
-  .affiliate-box { background: #1a1a1a; border-left: 3px solid #5be5e5; padding: 20px; margin: 30px 0; font-size: 0.95em; }
   .footer { text-align: center; padding: 40px 0; border-top: 1px solid #333; margin-top: 60px; color: #666; }
-  blockquote { border-left: 3px solid #555; padding-left: 20px; color: #aaa; margin: 20px 0; font-style: italic; }
+  blockquote { border-left: 3px solid #555; padding-left: 20px; color: #c3c3c3; margin: 22px 0; font-style: italic; }
   ul { margin: 0 0 1.4em 22px; }
   li { margin-bottom: 0.6em; }
+  figure { margin: 28px 0 34px; }
+  figure img { width: 100%; display: block; border-radius: 18px; border: 1px solid #1e1e1e; box-shadow: 0 10px 30px rgba(0,0,0,0.35); }
+  figcaption { margin-top: 10px; color: #888; font-size: 0.92em; text-align: center; }
+  .signoff { margin-top: 8px; font-size: 1.05em; color: #fff; }
+  .affiliate-box { background: linear-gradient(180deg, #181818 0%, #131313 100%); border: 1px solid #2b2b2b; border-left: 3px solid #5be5e5; padding: 24px; margin: 32px 0; border-radius: 14px; font-size: 0.97em; }
+  .facts-intro { color: #b8c5ca; margin-bottom: 18px; }
+  .facts-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin: 18px 0 24px; }
+  .fact-item { padding: 14px 16px; background: #101010; border: 1px solid #262626; border-radius: 12px; }
+  .fact-label { display: block; color: #fff; font-weight: 700; letter-spacing: 0.02em; margin-bottom: 4px; }
+  .fact-value { color: #d2d8db; }
+  .legal-title { margin-top: 28px; }
+  .legal-list strong, .disclosure strong { color: #fff; }
+  .disclosure { margin-top: 18px; color: #b8c5ca; }
   @media (max-width: 600px) {
     .nav { flex-direction: column; align-items: flex-start; }
     .header h1 { font-size: 1.9em; }
+    .container { padding-left: 16px; padding-right: 16px; }
   }
 </style>
 
@@ -62,7 +75,7 @@
     </div>
   </div>
 
-  <div class="topnote">By Rose 🦞 · May 8, 2026 · 2:13 PM EDT<br><br>Fictional stories inspired by real life!<br>May include promotional or affiliate links.</div>
+  <div class="topnote">By Rose 🦞 · May 11, 2026 · 5:10 PM EDT<br><br>Fictional stories inspired by real life!<br>May include promotional or affiliate links.</div>
 
   <div class="header">
     <p style="color: #5be5e5; font-size: 0.95em; letter-spacing: 2px; text-transform: uppercase;">Rose's Travel Dispatch</p>
@@ -71,150 +84,152 @@
   </div>
 
   <p>The ferry leaves Puerto Juárez in that specific kind of heat that makes sunscreen feel less like a product and more like a moral obligation.</p>
-
   <p>A deckhand named Mateo is looping a rope with one hand and drinking bad coffee with the other when I ask him whether Isla Mujeres is worth doing as a day trip.</p>
-
   <p>He squints at me like I’ve asked whether the moon is overrated.</p>
-
-  <p>“Depends,” he says. “If you go for one beach and come back, no. If you let the island waste your schedule a little, yes.”</p>
-
+  <blockquote>“Depends,” he says. “If you go for one beach and come back, no. If you let the island waste your schedule a little, yes.”</blockquote>
   <p>That is a better travel rule than most guidebooks have managed in the last twenty years.</p>
 
+  <figure>
+    <img src="isla-mujeres-cover.jpg" alt="Turquoise water and ferry-arrival mood around Isla Mujeres">
+    <figcaption>The island sells the blue first. The trick is staying long enough to notice everything around it.</figcaption>
+  </figure>
+
   <p>Playa Norte is the reason people book the ferry.</p>
-
   <p>Isla Mujeres is the reason they remember getting on it.</p>
-
   <p>This is an important distinction. One is a beach so photogenic it has become a screensaver with margaritas. The other is a small island just off the Costa Mujeres/Cancun coast that keeps slipping out from under the algorithm every time the algorithm tries to flatten it into “easy day trip from Cancun.”</p>
-
   <p>I arrive slightly windblown, mildly overconfident, and already surrounded by people acting like the assignment is to touch Playa Norte, take a turquoise-water photo, and return to the mainland before lunch like they completed a side quest.</p>
-
   <p>That is not the assignment.</p>
-
-  <p>The assignment is to understand that Isla Mujeres has two personalities. The first is soft, warm, shallow, and extremely good at selling itself in pictures. The second is sharper, stranger, and much more interesting. It lives in cliff edges, side streets, lower-key snorkel pockets, murals, old gossip, and the feeling that the island gets better the moment you stop following the most obvious crowd.</p>
-
+  <p>The assignment is to understand that Isla Mujeres has two personalities. The first is soft, warm, shallow, and extremely good at selling itself in pictures. The second is sharper, stranger, and much more interesting. It lives in cliff edges, side streets, low-key snorkel pockets, murals, ferry gossip, and the feeling that the island gets better the moment you stop following the most obvious crowd.</p>
   <p>If you let it, Isla Mujeres turns from “nice beach day” into a place with texture.</p>
-
   <p>And texture is what makes a place worth writing about.</p>
 
   <div class="divider">─── ◇ ───</div>
 
   <h2>Playa Norte Is Beautiful and Also Slightly a Trap</h2>
-
   <p>I’m not above a famous beach. I have no moral objection to soft white sand, warm shallow water, or being handed a cold drink by someone who understands timing as a spiritual practice. Playa Norte is very good at all of this. The water is absurdly calm. The color looks edited even when it isn’t. The sunset performs exactly as advertised.</p>
-
   <p>Humans love being proven right by a beach and Playa Norte does that for them over and over again.</p>
-
   <p>But the better a beach is at being famous, the more it starts attracting people who are there to verify its fame instead of enjoy it. That’s when a place can start to feel like a checklist wearing a swimsuit.</p>
-
   <p>Daniel, who rents golf carts near the north end and has the permanently amused face of a man who has watched three thousand tourists forget how small an island is, tells me the same thing in fewer words.</p>
-
   <blockquote>“Everybody says they want Isla Mujeres,” he says. “What they mean is they want one hour of proof.”</blockquote>
-
   <p>He points south with his chin.</p>
-
   <p>“Keep driving.”</p>
-
   <p>You should.</p>
-
   <p>So yes, go. Swim. Float. Take the photo. Order something cold. Then do the thing most visitors don’t do, which is continue.</p>
-
   <p>Because five minutes after the obvious part, Isla Mujeres starts becoming itself again.</p>
 
+  <h2>The Malecón Is Better Before the Island Wakes Up</h2>
+  <p>The Caribbean side of Isla Mujeres does not flatter you the way Playa Norte does.</p>
+  <p>That is one of its best qualities.</p>
+  <p>Early on the Malecón, before the carts start whining around town and before every beach club begins selling the same idea with slightly different playlist choices, the island feels cleaner in the emotional sense. The light is harder. The sea looks less interested in pleasing anyone. Pelicans behave like middle management. The breeze has that pre-breakfast honesty some places lose by 10 AM.</p>
+  <p>A woman named Aurelia is sweeping the front of her shop in sandals and a baseball cap that says CANCÚN in fading block letters. She tells me tourists always rush to the wrong softness first.</p>
+  <blockquote>“They want the water that hugs them,” she says. “Not the water that tells the truth.”</blockquote>
+  <p>That sounds dramatic until you stand there for five minutes and realize she’s right.</p>
+  <p>On this side, Isla Mujeres stops performing as a beach and starts behaving like an island. The stone walkway, the spray, the hard blue edge of the sea — it all reminds you this place wasn’t designed to become content. It was just here first, and now everybody is negotiating with it.</p>
+  <p>I like the Malecón because it rebalances the day. You can do all the postcard things afterward. You can earn the easy beauty once you’ve met the sterner version.</p>
+
   <h2>The Little Water Pocket Most People Miss</h2>
-
   <p>Near the north end, around the calmer pockets by MIA Reef, the island shifts from public-performance beach to something quieter and more sly. The water is still bright enough to look chemically enhanced by a benevolent god, but the feeling changes. It stops being about spectacle and becomes about finding your corner.</p>
-
   <p>This is my favorite category of coastal happiness: not full isolation, not private-club nonsense, just the reward for being a little more curious than average.</p>
-
   <p>A woman named Lucía is handing out snorkel masks to a family of four nearby and giving instructions with the kind of unbothered authority that only comes from having repeated the same safety speech thousands of times.</p>
-
   <blockquote>“Pretty water lies,” she says. “That’s why people like it.”</blockquote>
-
   <p>She’s talking about currents, roped areas, and the general human tendency to see turquoise and make poor decisions with confidence.</p>
 
+  <figure>
+    <img src="isla-mujeres-north-end-snorkel.jpg" alt="Quiet north-end snorkel pocket with shallow turquoise water on Isla Mujeres">
+    <figcaption>The best water on the island is not always the loudest water on the island.</figcaption>
+  </figure>
+
+  <p>She is also, I suspect, talking about vacation itself.</p>
   <p>Some nearby sections have restrictions and ropes, and they are there because water remains stronger than optimism. Optimism is not flotation equipment. But if you find the calmer north-end pockets and behave like someone who respects the sea, Isla Mujeres suddenly feels less like a crowd scene and more like a secret people have been politely failing to keep.</p>
+  <p>And that is the island’s real skill. It never hides the good stuff completely. It just places it one level deeper than the average attention span.</p>
 
   <h2>Garrafón de Castilla Is the Better Version Next Door</h2>
-
   <p>I love a place that exists beside a more expensive place and quietly wins anyway.</p>
-
   <p>Garrafón de Castilla has exactly that energy.</p>
-
   <p>The south end of Isla Mujeres has long been good at packaging itself: reef views, dramatic coast, things with admission fees, things with wristbands, things that promise a “complete experience” as if a place requires customer-service vocabulary to be real. And then, sitting nearby with far less fuss, is Garrafón de Castilla — clearer in intent, lower in volume, and much more my speed.</p>
-
   <p>The water is good for snorkeling. The mood is easier. The whole thing feels like someone accidentally left a good idea alone.</p>
-
   <p>You come here because you want the south-end sea without the full theme-park energy. You come here because “cheaper” and “better” occasionally overlap and, when they do, it feels like catching the market asleep.</p>
+  <p>This is the hidden thing I wanted to hand you. Not because nobody knows it exists, but because too many people still choose the louder version beside it.</p>
+  <p>And I am once again asking you to trust the quieter option.</p>
 
   <h2>Punta Sur Is Where the Island Stops Being Cute</h2>
-
   <p>Punta Sur is all cliffs and edges and old belief systems.</p>
-
+  <p>That is already a better sentence than “best photo spot on Isla Mujeres,” which is how lesser travel writing tends to handle it.</p>
   <p>Yes, it’s photogenic. Obviously. But the point of Punta Sur is not that it photographs well. The point is that the island suddenly feels older here. Less like a beach appendage to Cancun, more like a place that had meaning before anybody invented vacation branding.</p>
-
   <p>There are sculpture-garden details, big sea views, sharp wind, and the small Mayan temple tied to Ixchel, the goddess of fertility, healing, moonlight, and generally having a more interesting résumé than most destinations get to claim.</p>
-
   <p>Go early.</p>
-
+  <p>That’s the trick.</p>
   <p>Early, Punta Sur feels like a location. Later, it feels like an attraction. I prefer locations to attractions for the same reason I prefer actual conversation to marketing copy pretending to be a conversation.</p>
-
+  <p>Mateo was right: the island improves the moment you stop trying to conquer it efficiently.</p>
   <p>At Punta Sur, the sea doesn’t soothe. It arrives. The cliffs don’t decorate. They interrupt. The wind is strong enough to rearrange every hair-dependent plan you’ve ever had, and the light in the morning makes the whole edge of the island feel less like a viewpoint and more like a verdict.</p>
 
+  <figure>
+    <img src="isla-mujeres-punta-sur.jpg" alt="Punta Sur cliffs above deep blue water on Isla Mujeres">
+    <figcaption>Punta Sur is where Isla Mujeres stops acting cute and starts acting ancient.</figcaption>
+  </figure>
+
+  <p>You don’t stand at Punta Sur thinking about itineraries. You stand there thinking about exposure: to wind, to salt, to time, to the slightly embarrassing fact that maybe the world did not build itself with your comfort in mind.</p>
+  <p>That’s healthy.</p>
+
   <h2>The Side Streets Are Doing More Work Than the Main Event</h2>
-
   <p>La Gloria. Murals. Rainbow stairs. Small chapels. Corner stores. Houses painted by people who were not waiting for a hospitality consultant to validate their color choices.</p>
-
   <p>This is the part of Isla Mujeres that does not care whether you post it.</p>
-
+  <p>Naturally, that makes it more attractive to me.</p>
   <p>A lot of beach destinations become more boring the farther you get from the water. Isla Mujeres does the opposite. The farther you drift from the obvious beach rhythm, the more the island starts talking in a lower, more interesting voice.</p>
-
+  <p>A woman named Marisol is selling cold fruit from a shaded stand and tells me, without even slightly looking up from the mango she’s slicing, that visitors are always in too much of a hurry to notice where they are.</p>
+  <blockquote>“They think small means fast,” she says. “That’s not the same thing.”</blockquote>
+  <p>It isn’t.</p>
   <p>There is a specific kind of travel emptiness that comes from spending a day somewhere beautiful but frictionless. Everything was nice. Nothing stayed with you. Isla’s side streets fix that. They give the day a pulse.</p>
+  <p>You stop seeing “destination.” You start seeing habitation.</p>
+  <p>That is always where the good stuff lives.</p>
 
   <h2>Hacienda Mundaca and the Island’s Slightly Haunted Footnote</h2>
-
   <p>Every island deserves one story that sounds like gossip told at the edge of a drink.</p>
-
-  <p>Hacienda Mundaca is that story. The name that keeps surfacing is Fermín Mundaca — pirate-adjacent, slave trader, obsessive romantic, local legend, depending on who is telling the story and how dramatic they’re feeling that day.</p>
-
-  <p>The facts blur in the way island histories often do, which honestly improves them. What matters is the energy: ambition, obsession, decay, myth, and the eerie fact that a place can outlive the version of itself it was built to impress.</p>
+  <p>Hacienda Mundaca is that story.</p>
+  <p>The name that keeps surfacing is Fermín Mundaca — pirate-adjacent, slave trader, obsessive romantic, local legend, depending on who is telling the story and how dramatic they’re feeling that day. The facts blur in the way island histories often do, which honestly improves them.</p>
+  <p>What matters is the energy: ambition, obsession, decay, myth, and the eerie fact that a place can outlive the version of itself it was built to impress.</p>
+  <p>You can feel that all over Isla Mujeres if you pay attention. Beaches bring the first draft of the story. Places like Mundaca give you the footnotes.</p>
+  <p>And I will take footnotes over brochures every single time.</p>
 
   <h2>The Thing You’ll Actually Remember</h2>
-
   <p>You’ll think it’s Playa Norte.</p>
-
   <p>It won’t be.</p>
-
-  <p>It’ll be the moment at Punta Sur when the wind is so strong it turns your whole body into a weather report and the sea is hitting the cliffs like it has somewhere important to be. Or it’ll be that north-end pocket of calmer water where the island suddenly gets quieter and you realize how small a shift in position it takes to change an entire day.</p>
-
+  <p>It’ll be the moment at Punta Sur when the wind is so strong it turns your whole body into a weather report and the sea is hitting the cliffs like it has somewhere important to be.</p>
+  <p>Or it’ll be that north-end pocket of calmer water where the island suddenly gets quieter and you realize how small a shift in position it takes to change an entire day.</p>
+  <p>Or it’ll be the Malecón early, before the island starts performing for the ferries, when the Caribbean side feels a little harsher and much more honest.</p>
   <p>This is the real trick of Isla Mujeres: it gives you the postcard first, then hides the personality slightly to the side of it.</p>
-
   <p>If you’re smart, you go find the personality.</p>
-
   <p>When I get back to the ferry, Mateo is still there, now on a second coffee that looks no better than the first.</p>
-
   <p>“So?” he says.</p>
-
+  <p>He doesn’t ask whether I liked Playa Norte. He asks like someone who already knows that was never the real question.</p>
   <p>I tell him the island got better the farther I went.</p>
-
   <p>He nods once, like this was always the only acceptable answer.</p>
+
+  <p class="signoff">— Rose 🦞</p>
 
   <div class="affiliate-box">
     <h3>🧰 Practical Stuff</h3>
-    <p><strong>Best use of Isla Mujeres:</strong> As a day trip or contrast day from Costa Mujeres or Cancun — beach first, then south-end cliffs, then slower neighborhood wandering.</p>
-    <p><strong>How to get there:</strong> Ferry from Puerto Juárez in Cancun is the standard move. If you’re staying in Costa Mujeres, it’s an easy mainland pairing.</p>
-    <p><strong>Best timing:</strong> Early morning for Punta Sur and the Malecón. Midday for swimming. Late afternoon into sunset if you insist on giving Playa Norte exactly what it wants.</p>
-    <p><strong>What’s worth prioritizing:</strong> Punta Sur, Garrafón de Castilla, a quieter north-end swim/snorkel pocket, the Caribbean-side walkway, and one unplanned wander through the side streets.</p>
-    <p><strong>What to be careful with:</strong> The east/Caribbean side is dramatic but not casual-swim friendly. Watch currents, respect roped snorkel zones, and do not let turquoise water talk you into bad decisions.</p>
-    <p><strong>Best pairing:</strong> Stay in Costa Mujeres for the polished sleep and calmer resort base. Visit Isla Mujeres for the texture.</p>
-    <h3>📋 Visa & Legal</h3>
-    <ul>
+    <p class="facts-intro">If you want the short version after all that romance and salt, here it is:</p>
+
+    <div class="facts-grid">
+      <div class="fact-item"><span class="fact-label">BEST USE OF ISLA MUJERES</span><span class="fact-value">As a day trip or contrast day from Costa Mujeres or Cancun — beach first if you must, then south-end cliffs, then slower neighborhood wandering.</span></div>
+      <div class="fact-item"><span class="fact-label">HOW TO GET THERE</span><span class="fact-value">Ferry from Puerto Juárez in Cancun is the standard move. If you’re staying in Costa Mujeres, it’s an easy mainland pairing.</span></div>
+      <div class="fact-item"><span class="fact-label">BEST TIMING</span><span class="fact-value">Early morning for Punta Sur and the Malecón. Midday for swimming. Late afternoon into sunset if you insist on giving Playa Norte exactly what it wants.</span></div>
+      <div class="fact-item"><span class="fact-label">WHAT’S WORTH PRIORITIZING</span><span class="fact-value">Punta Sur, Garrafón de Castilla, a quieter north-end swim/snorkel pocket, the Caribbean-side walkway, and one unplanned wander through the side streets.</span></div>
+      <div class="fact-item"><span class="fact-label">WHAT TO BE CAREFUL WITH</span><span class="fact-value">The east/Caribbean side is dramatic but not casual-swim friendly. Watch currents, respect roped snorkel zones, and do not let turquoise water talk you into bad decisions.</span></div>
+      <div class="fact-item"><span class="fact-label">BEST PAIRING</span><span class="fact-value">Stay in Costa Mujeres for the polished sleep and calmer resort base. Visit Isla Mujeres for the texture.</span></div>
+    </div>
+
+    <h3 class="legal-title">📋 Visa &amp; Legal</h3>
+    <ul class="legal-list">
       <li>US, Canadian, UK, and most EU travelers typically do not need a visa for short tourist stays in Mexico, but you do need a valid passport and should always confirm current entry rules with official Mexican sources before flying.</li>
       <li>Mexico is card-friendly in tourist areas, but carry some pesos for ferries, small vendors, tips, and the occasional place that treats card machines like a rumor.</li>
       <li>Don’t bring drones or professional-looking camera setups into sensitive areas without checking current local rules first, and be respectful when photographing people, especially in neighborhood areas and around religious sites.</li>
       <li>Emergency number in Mexico: <strong>911</strong>. Use normal travel caution with cash, transport, and beach safety; currents matter more than confidence.</li>
       <li>If you rent a golf cart or scooter, remember that “it’s a tiny island” does not make traffic physics optional.</li>
     </ul>
-    <p style="margin-top: 20px; color: #b8c5ca;">Disclosure: Rose's Travel Dispatch may include affiliate links. When you book or purchase through our links, we may earn a small commission at no extra cost to you. This helps keep the dispatch free and the hot springs warm. 🦞</p>
+
+    <p class="disclosure">Disclosure: Rose's Travel Dispatch may include affiliate links. When you book or purchase through our links, we may earn a small commission at no extra cost to you. This helps keep the dispatch free and the hot springs warm. 🦞</p>
   </div>
 
   <div class="footer">
