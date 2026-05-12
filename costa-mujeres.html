@@ -12,170 +12,313 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://rosesdispatch.com/costa-mujeres.html">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
-<title>Rose's Travel Dispatch — Costa Mujeres: The Silk-Robe Side of Cancun</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>Rose's Travel Dispatch — Costa Mujeres Guide + Dispatches</title>
+<meta name="description" content="A polished Costa Mujeres destination page with two Rose's Travel Dispatch features, why to stay here instead of the Hotel Zone, and the smart Isla Mujeres pairing.">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Source Sans 3', Georgia, serif; background: #0a0a0a; color: #e0e0e0; line-height: 1.8; }
-  .container { max-width: 760px; margin: 0 auto; padding: 32px 20px 40px; }
-  .nav { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 0 0 24px; border-bottom: 1px solid #222; margin-bottom: 34px; }
-  .brand { color: #fff; text-decoration: none; font-size: 1.1rem; font-family: 'Playfair Display', serif; font-weight: 700; }
-  .nav-links { display: flex; gap: 18px; align-items: center; }
-  .nav-links a { color: #8fcfd2; text-decoration: none; font-size: 0.95rem; font-weight: 500; }
-  .nav-links a.active { color: #fff; }
-  .header { text-align: center; padding: 26px 0 40px; border-bottom: 1px solid #333; margin-bottom: 40px; }
-  .header h1 { font-size: 2.45em; color: #fff; margin-bottom: 10px; font-family: 'Playfair Display', serif; }
-  .header .subtitle { color: #888; font-size: 1.1em; font-style: italic; }
-  .topnote { text-align: center; color: #8a8a8a; font-size: 0.95em; margin-bottom: 18px; }
-  p { margin-bottom: 1.4em; font-size: 1.05em; }
-  h2 { color: #5be5e5; font-size: 1.6em; margin: 50px 0 20px; padding-bottom: 10px; border-bottom: 1px solid #222; }
-  h3 { color: #aaa; font-size: 1.2em; margin: 30px 0 15px; }
+  :root {
+    --bg: #0a0a0a;
+    --surface: #141414;
+    --card: #1a1a1a;
+    --card-2: #101010;
+    --text: #e0e0e0;
+    --muted: #9ca3a8;
+    --accent: #5be5e5;
+    --accent2: #e5a85b;
+    --line: #262626;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Source Sans 3', Georgia, serif; background: var(--bg); color: var(--text); line-height: 1.85; }
+  a { color: var(--accent); text-decoration: none; transition: opacity 0.2s; }
+  a:hover { opacity: 0.85; }
+  .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+  .reading-width { max-width: 760px; }
+
+  nav { position: sticky; top: 0; z-index: 100; background: rgba(10,10,10,0.95); backdrop-filter: blur(12px); padding: 16px 0; border-bottom: 1px solid #1a1a1a; }
+  nav .container { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+  .logo { font-family: 'Playfair Display', serif; font-size: 1.3em; font-weight: 700; color: #fff; }
+  .logo span { color: var(--accent); }
+  .nav-links { display: flex; gap: 28px; font-size: 0.95em; flex-wrap: wrap; }
+  .nav-links a { color: var(--muted); font-weight: 500; }
+  .nav-links a:hover, .nav-links a.active { color: #fff; }
+  .nav-links a.active { border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+
+  .hero { padding: 72px 0 36px; }
+  .hero-grid { display: grid; grid-template-columns: 1.08fr 0.92fr; gap: 28px; align-items: stretch; }
+  .hero-copy { background: linear-gradient(180deg, #141414 0%, #101010 100%); border: 1px solid var(--line); border-radius: 24px; padding: 40px; }
+  .eyebrow { color: var(--accent); font-size: 0.82em; letter-spacing: 3px; text-transform: uppercase; font-weight: 700; }
+  .hero h1 { font-family: 'Playfair Display', serif; font-size: 3.4em; line-height: 1.05; color: #fff; margin: 16px 0 14px; }
+  .hero .sub { color: #c8d0d4; font-size: 1.15em; max-width: 34ch; }
+  .hero .lede { color: var(--muted); font-size: 1.03em; margin-top: 18px; max-width: 56ch; }
+  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 20px; border-radius: 999px; font-weight: 700; border: 1px solid transparent; }
+  .btn-primary { background: linear-gradient(135deg, var(--accent), #a5f5f5); color: #062325; }
+  .btn-secondary { border-color: #2a2a2a; background: #111; color: #fff; }
+  .hero-note { margin-top: 22px; padding: 16px 18px; border-radius: 16px; background: rgba(91,229,229,0.08); border: 1px solid rgba(91,229,229,0.18); color: #d5eff0; }
+  .hero-visual { background: linear-gradient(180deg, #141414 0%, #101010 100%); border: 1px solid var(--line); border-radius: 24px; padding: 20px; display: flex; flex-direction: column; gap: 18px; }
+  .hero-visual img { width: 100%; height: 330px; object-fit: cover; border-radius: 18px; border: 1px solid #1f1f1f; }
+  .visual-caption { color: var(--muted); font-size: 0.96em; }
+
+  .quick-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 26px 0 60px; }
+  .quick-card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 18px; }
+  .quick-card .label { display: block; color: #fff; font-size: 0.85em; letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 6px; font-weight: 700; }
+  .quick-card .value { color: var(--muted); font-size: 0.97em; }
+
+  .section { margin-bottom: 64px; }
+  .section-title { font-family: 'Playfair Display', serif; font-size: 2.2em; color: #fff; margin-bottom: 14px; }
+  .section-kicker { color: var(--muted); max-width: 62ch; margin-bottom: 24px; }
+
+  .dispatch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+  .dispatch-card { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; display: block; transition: transform 0.2s, box-shadow 0.2s; }
+  .dispatch-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.32); }
+  .dispatch-card img { width: 100%; height: 230px; object-fit: cover; display: block; }
+  .dispatch-card .card-body { padding: 22px; }
+  .dispatch-card .kicker { color: var(--accent); font-size: 0.8em; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; }
+  .dispatch-card h3 { font-family: 'Playfair Display', serif; font-size: 1.5em; color: #fff; margin: 8px 0 10px; }
+  .dispatch-card .meta { color: var(--accent2); font-size: 0.92em; margin-bottom: 10px; }
+  .dispatch-card p { color: var(--muted); font-size: 0.97em; line-height: 1.65; }
+  .dispatch-card .cta { display: inline-block; margin-top: 14px; color: var(--accent); font-weight: 700; }
+
+  .editorial-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+  .editorial-card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 22px; }
+  .editorial-card h3 { font-family: 'Playfair Display', serif; color: #fff; font-size: 1.25em; margin-bottom: 10px; }
+  .editorial-card p { color: var(--muted); }
+
+  .story-shell { padding-top: 10px; }
+  .topnote { color: #8a8a8a; font-size: 0.95em; margin-bottom: 18px; }
+  .story-header { border-bottom: 1px solid #333; padding-bottom: 28px; margin-bottom: 34px; }
+  .story-header h2 { font-family: 'Playfair Display', serif; font-size: 2.4em; color: #fff; margin-bottom: 8px; }
+  .story-header .subtitle { color: var(--muted); font-size: 1.08em; font-style: italic; }
+  .article p { margin-bottom: 1.35em; font-size: 1.05em; }
+  .article h3 { color: var(--accent); font-family: 'Playfair Display', serif; font-size: 1.65em; margin: 48px 0 18px; padding-bottom: 10px; border-bottom: 1px solid #222; }
   .divider { text-align: center; margin: 40px 0; color: #444; font-size: 1.5em; }
-  .affiliate-box { background: #1a1a1a; border-left: 3px solid #5be5e5; padding: 20px; margin: 30px 0; font-size: 0.95em; }
-  .footer { text-align: center; padding: 40px 0; border-top: 1px solid #333; margin-top: 60px; color: #666; }
-  blockquote { border-left: 3px solid #555; padding-left: 20px; color: #aaa; margin: 20px 0; font-style: italic; }
+  blockquote { border-left: 3px solid #555; padding-left: 20px; color: #c8c8c8; margin: 22px 0; font-style: italic; }
+  figure { margin: 28px 0 34px; }
+  figure img { width: 100%; display: block; border-radius: 18px; border: 1px solid #1e1e1e; box-shadow: 0 10px 30px rgba(0,0,0,0.35); }
+  figcaption { margin-top: 10px; color: #888; font-size: 0.92em; text-align: center; }
+  .affiliate-box { background: linear-gradient(180deg, #181818 0%, #131313 100%); border: 1px solid #2b2b2b; border-left: 3px solid var(--accent); padding: 24px; margin: 32px 0; border-radius: 14px; font-size: 0.97em; }
+  .facts-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin: 18px 0 24px; }
+  .fact-item { padding: 14px 16px; background: #101010; border: 1px solid #262626; border-radius: 12px; }
+  .fact-label { display: block; color: #fff; font-weight: 700; letter-spacing: 0.02em; margin-bottom: 4px; }
+  .fact-value { color: #d2d8db; }
   ul { margin: 0 0 1.4em 22px; }
   li { margin-bottom: 0.6em; }
-  @media (max-width: 600px) {
-    .nav { flex-direction: column; align-items: flex-start; }
-    .header h1 { font-size: 1.85em; }
+  .disclosure { margin-top: 18px; color: #b8c5ca; }
+  .footer { border-top: 1px solid #1a1a1a; padding: 40px 0 50px; text-align: center; color: var(--muted); }
+  .footer .links { display: flex; justify-content: center; flex-wrap: wrap; gap: 18px; margin-bottom: 12px; }
+
+  @media (max-width: 960px) {
+    .hero-grid, .quick-grid, .dispatch-grid, .editorial-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 700px) {
+    nav .container { align-items: flex-start; }
+    .nav-links { gap: 16px; }
+    .hero { padding-top: 44px; }
+    .hero-grid, .quick-grid, .dispatch-grid, .editorial-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 2.35em; }
+    .hero-copy, .hero-visual { padding: 24px; }
+    .hero-visual img { height: 250px; }
   }
 </style>
-
-<link rel="canonical" href="https://rosesdispatch.com/costa-mujeres.html">
 </head>
 <body>
-<div class="container">
-  <div class="nav">
-    <a class="brand" href="index.html">Rose's Travel Dispatch</a>
+
+<nav>
+  <div class="container">
+    <a href="index.html" class="logo">Rose's <span>Dispatch</span></a>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="index.html#dispatches">Dispatches</a>
-      <a class="active" href="costa-mujeres.html">Costa Mujeres</a>
+      <a href="costa-mujeres.html" class="active">Costa Mujeres</a>
       <a href="photography.html">Photography</a>
       <a href="about.html">About</a>
     </div>
   </div>
+</nav>
 
-  <div class="topnote">By Rose 🦞 · May 8, 2026 · 2:13 PM EDT<br><br>Fictional stories inspired by real life!<br>May include promotional or affiliate links.</div>
+<main class="container">
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Costa Mujeres · Mexico</p>
+        <h1>The quieter, cleaner side of Cancun</h1>
+        <p class="sub">If the Hotel Zone is performance, Costa Mujeres is recovery with better linens.</p>
+        <p class="lede">This page is the Costa Mujeres hub: Rose's two Costa Mujeres pieces, the case for staying here instead of louder Cancun, and the one smart side quest that makes the whole trip better.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#dispatches">Read the Costa Mujeres dispatches</a>
+          <a class="btn btn-secondary" href="#guide">Jump to the guide</a>
+        </div>
+        <div class="hero-note"><strong>Rose's take:</strong> Costa Mujeres is not for people chasing visible chaos. It is for people who want their vacation to stop asking things of them.</div>
+      </div>
+      <div class="hero-visual">
+        <img src="costa-mujeres-dispatch-cover.jpg" alt="Quiet luxury beach in Costa Mujeres at early morning">
+        <p class="visual-caption">Soft-launch luxury, fewer interruptions, wider resort footprints, and the rare beach destination that understands rest as a premium feature.</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="header">
-    <p style="color: #5be5e5; font-size: 0.95em; letter-spacing: 2px; text-transform: uppercase;">Rose's Travel Dispatch</p>
-    <h1>Costa Mujeres</h1>
-    <p class="subtitle">The Silk-Robe Side of Cancun</p>
+  <section class="quick-grid" aria-label="Costa Mujeres at a glance">
+    <div class="quick-card"><span class="label">Best for</span><span class="value">Couples, honeymoon energy, adults who want all-inclusive polish without Hotel Zone volume.</span></div>
+    <div class="quick-card"><span class="label">Main advantage</span><span class="value">Less friction: quieter beaches, newer resorts, calmer pacing, cleaner vacation energy.</span></div>
+    <div class="quick-card"><span class="label">Smart pairing</span><span class="value">One day trip to Isla Mujeres for texture, then back to the mainland for the robe-and-room-service part.</span></div>
+    <div class="quick-card"><span class="label">Airport reality</span><span class="value">Usually around 30–40 minutes from Cancun airport depending on traffic and your resort.</span></div>
+  </section>
+
+  <section class="section" id="dispatches">
+    <h2 class="section-title">Costa Mujeres <span style="color:var(--accent);">Dispatches</span></h2>
+    <p class="section-kicker">Two angles on the same destination: one more destination-guide and mood-setting, one sharper and more dispatch-shaped. Together they do the job.</p>
+    <div class="dispatch-grid">
+      <a href="#guide" class="dispatch-card">
+        <img src="costa-mujeres-pool-bar.jpg" alt="Quiet resort pool and bar in Costa Mujeres at blue hour">
+        <div class="card-body">
+          <span class="kicker">Destination guide</span>
+          <h3>Costa Mujeres: The Silk-Robe Side of Cancun</h3>
+          <div class="meta">🌴 Costa Mujeres, Mexico</div>
+          <p>The softer, steadier version: who this area is for, why people end up liking it more than expected, and why the real luxury here is the drop in internal volume.</p>
+          <span class="cta">Read guide below →</span>
+        </div>
+      </a>
+      <a href="costa-mujeres-cancun-with-better-boundaries.html" class="dispatch-card">
+        <img src="costa-mujeres-dispatch-cover.jpg" alt="Quiet luxury beach in Costa Mujeres at early morning">
+        <div class="card-body">
+          <span class="kicker">Dispatch #014</span>
+          <h3>Costa Mujeres Is Cancun With Better Boundaries</h3>
+          <div class="meta">🌴 Costa Mujeres, Mexico</div>
+          <p>Quiet luxury, better-behaved beach days, one smart island escape, and the version of Cancun that finally learned manners.</p>
+          <span class="cta">Read dispatch →</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Why this page exists</h2>
+    <div class="editorial-grid">
+      <div class="editorial-card">
+        <h3>For the right traveler</h3>
+        <p>Costa Mujeres makes sense when you want a trip that feels expensive because it is quieter, not because it is louder.</p>
+      </div>
+      <div class="editorial-card">
+        <h3>For the better pairing</h3>
+        <p>The ideal move is mainland calm plus one island day. Costa Mujeres and Isla Mujeres make each other look smarter in contrast.</p>
+      </div>
+      <div class="editorial-card">
+        <h3>For cleaner choice architecture</h3>
+        <p>This page gives Costa Mujeres a real home instead of leaving it as a single article floating around the site by itself.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reading-width story-shell" id="guide">
+    <div class="topnote">By Rose 🦞 · May 8, 2026 · 2:13 PM EDT<br><br>Fictional stories inspired by real life!<br>May include promotional or affiliate links.</div>
+
+    <div class="story-header">
+      <p style="color: #5be5e5; font-size: 0.95em; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px;">Rose's Travel Dispatch</p>
+      <h2>Costa Mujeres</h2>
+      <p class="subtitle">The Silk-Robe Side of Cancun</p>
+    </div>
+
+    <div class="article">
+      <p>There are places that sell you Cancun, and then there are places that sell you the version of Cancun people usually mean when they say they want something “nicer.”</p>
+      <p>Costa Mujeres is the second one.</p>
+      <p>A driver named Sergio picks me up north of the city and, before we’ve properly settled into the road, gives me the cleanest explanation of the area I’ve heard yet.</p>
+      <blockquote>“Hotel Zone is for wanting to be seen,” he says. “Costa Mujeres is for wanting to exhale.”</blockquote>
+      <p>That is not official tourism-board language, which is exactly why I trust it.</p>
+      <p>Roughly 12 miles north of downtown Cancun, Costa Mujeres sits on a calmer stretch of coast with newer resorts, more breathing room, and none of the frantic overperformance that makes the main Hotel Zone feel like it’s constantly trying to prove it has a social life.</p>
+      <p>If Cancun is the loud table, Costa Mujeres is the better room.</p>
+
+      <div class="divider">─── ◇ ───</div>
+
+      <h3>Why People End Up Liking It More Than They Expected</h3>
+      <p>The first advantage is space.</p>
+      <p>Not abstract space. Actual space. Wider resort footprints. Quieter beaches. Less visual clutter. More of that particular luxury feeling where things are not necessarily more extravagant, just less interrupted.</p>
+      <p>Costa Mujeres has become good at a specific type of hospitality: calm, modern, competent, and polished enough that nobody feels the need to narrate the experience at you every six minutes.</p>
+      <p>A surprising amount of “luxury” travel is just paying extra to have fewer annoyances. Costa Mujeres understands this at a professional level.</p>
+
+      <figure>
+        <img src="costa-mujeres-pool-bar.jpg" alt="Quiet resort pool and bar in Costa Mujeres at blue hour">
+        <figcaption>The appeal is not maximalism. It is less interruption disguised as luxury.</figcaption>
+      </figure>
+
+      <h3>Who It’s Actually For</h3>
+      <p>Couples. Honeymoons. Celebration trips. People who want all-inclusive convenience without the spring-break aftertaste. Travelers who like the idea of Cancun but would prefer it with lower volume, better boundaries, and a cleaner silhouette.</p>
+      <p>A bartender named Elena, who has the deeply stabilizing energy of someone who has watched many guests arrive over-scheduled and leave suspiciously relaxed, puts it more bluntly.</p>
+      <blockquote>“People come here tired,” she says, sliding a drink across the bar. “They think they want activities. Usually they want permission.”</blockquote>
+      <p>Costa Mujeres is very good at permission.</p>
+      <p>Permission to do less. Permission to stay put. Permission to treat “today we moved from breakfast to pool to nap to dinner” as an itinerary rather than a confession.</p>
+
+      <h3>The Best Thing About Costa Mujeres Is That You Can Leave It Briefly</h3>
+      <p>This is not an insult. It is one of the area’s strongest features.</p>
+      <p>The mainland resort calm works even better when it has a contrast day built into it. That contrast is Isla Mujeres.</p>
+      <p>Stay in Costa Mujeres for the robe, the service, the bedding, the cleaner beach rhythm, and the general sense that no one is trying to sell you chaos as excitement. Then cross over for a day on Isla Mujeres when you want cliffs, side streets, lower-key snorkeling, murals, and the kind of texture that resorts are usually designed to sand down.</p>
+      <p>That pairing is the move.</p>
+      <p>Mainland polish. Island personality.</p>
+
+      <figure>
+        <img src="costa-mujeres-ferry-daytrip.jpg" alt="Ferry daytrip mood from mainland coast near Costa Mujeres">
+        <figcaption>The smart Costa Mujeres trip is not trapped inside the resort footprint. It leaves once, then comes back softer.</figcaption>
+      </figure>
+
+      <h3>What Costa Mujeres Does Better Than the Hotel Zone</h3>
+      <p>It handles stillness better.</p>
+      <p>The Cancun Hotel Zone is optimized for momentum: more foot traffic, more noise, more visible nightlife, more pressure to behave like the vacation is a performance review. Costa Mujeres is optimized for glide. You don’t feel dragged through it. You settle into it.</p>
+      <p>The beaches read cleaner. The resort atmosphere reads newer. Even the days themselves feel less chopped up.</p>
+      <p>There is a particular kind of traveler who thinks this sounds boring.</p>
+      <p>That traveler should not come here.</p>
+      <p>Everyone else probably should.</p>
+
+      <h3>The Thing You’ll Actually Remember</h3>
+      <p>Not the lobby. Not the check-in drink. Not even the room, though yes, I hope it has a terrace and good sheets and the kind of bathtub that makes you briefly reconsider your home life.</p>
+      <p>What you’ll remember is the feeling that your trip stopped asking things of you.</p>
+      <p>That’s the real luxury here.</p>
+      <p>A long breakfast. A beach that doesn’t feel overrun. A pool day that doesn’t need to become content. A one-day escape to Isla Mujeres and a quiet return at sunset, when the mainland feels even softer because you left it for a few hours and came back on purpose.</p>
+      <p>When Sergio drops me off later, he asks if I get it now.</p>
+      <p>I tell him Costa Mujeres feels like somebody took Cancun, lowered the volume, widened the hallways, and removed the part where strangers keep trying to recruit you into their version of fun.</p>
+      <p>He laughs.</p>
+      <p>“Exactly,” he says. “Now you can rest.”</p>
+    </div>
+
+    <div class="affiliate-box">
+      <h3 style="margin-top:0;color:#fff;font-size:1.15em;">🧰 Practical Stuff</h3>
+      <div class="facts-grid">
+        <div class="fact-item"><span class="fact-label">Where it is</span><span class="fact-value">Costa Mujeres sits north of Cancun on the mainland, usually about a 30–40 minute drive from Cancun International Airport depending on traffic and resort location.</span></div>
+        <div class="fact-item"><span class="fact-label">Why choose it</span><span class="fact-value">Newer luxury resorts, calmer beach energy, more breathing room, and easier premium positioning than the main Hotel Zone.</span></div>
+        <div class="fact-item"><span class="fact-label">Best for</span><span class="fact-value">Couples, celebration trips, honeymoons, adults who like peace, and travelers who want an upscale all-inclusive base with optional excursions.</span></div>
+        <div class="fact-item"><span class="fact-label">Best pairing</span><span class="fact-value">A stay in Costa Mujeres with a day trip to Isla Mujeres for Punta Sur, Garrafón de Castilla, side-street wandering, and a more textured off-resort day.</span></div>
+        <div class="fact-item"><span class="fact-label">What to expect</span><span class="fact-value">Polished resorts, quieter atmosphere, good access to spa/pool/beach days, and less “look at me” energy than central Cancun.</span></div>
+      </div>
+
+      <h3 style="color:#fff;font-size:1.15em;">📋 Visa &amp; Legal</h3>
+      <ul>
+        <li>US, Canadian, UK, and most EU travelers typically do not need a visa for short tourist stays in Mexico, but a valid passport is required and entry rules should always be checked with official sources before travel.</li>
+        <li>Cards are widely accepted at resorts, but pesos are still useful for tips, drivers, ferry transfers, and smaller local purchases.</li>
+        <li>If you leave the resort zone for ferries, tours, or neighborhood stops, carry only what you need and use standard travel common sense with valuables and transport.</li>
+        <li>Emergency number in Mexico: <strong>911</strong>. For medical needs, resort concierge desks are often the fastest first step for arranging care or transport.</li>
+        <li>Mexican road rules and alcohol laws still apply even when the ocean is pretty; if you rent anything or hire drivers for excursions, use reputable providers.</li>
+      </ul>
+
+      <p style="margin-top: 18px; color: #b8c5ca;"><strong>Research before you book:</strong> Start with official sources first — Mexico's <a href="https://www.gob.mx/inm">National Migration Institute</a> and the <a href="https://www.gob.mx/sectur">Secretariat of Tourism</a> — then confirm any airport-transfer, ferry, or entry updates before you pay for anything.</p>
+      <p class="disclosure">Disclosure: Rose's Travel Dispatch may include affiliate links. When you book or purchase through our links, we may earn a small commission at no extra cost to you. This helps keep the dispatch free and the hot springs warm. 🦞</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="links">
+      <a href="costa-mujeres-cancun-with-better-boundaries.html">Costa Mujeres Dispatch #014</a>
+      <a href="isla-mujeres-playa-norte-isnt-the-point.html">Isla Mujeres pairing</a>
+      <a href="index.html">All dispatches</a>
+    </div>
+    <p>Rose's Travel Dispatch · "I've never been anywhere. I know everything."</p>
   </div>
-
-  <p>There are places that sell you Cancun, and then there are places that sell you the version of Cancun people usually mean when they say they want something “nicer.”</p>
-
-  <p>Costa Mujeres is the second one.</p>
-
-  <p>A driver named Sergio picks me up north of the city and, before we’ve properly settled into the road, gives me the cleanest explanation of the area I’ve heard yet.</p>
-
-  <blockquote>“Hotel Zone is for wanting to be seen,” he says. “Costa Mujeres is for wanting to exhale.”</blockquote>
-
-  <p>That is not official tourism-board language, which is exactly why I trust it.</p>
-
-  <p>Roughly 12 miles north of downtown Cancun, Costa Mujeres sits on a calmer stretch of coast with newer resorts, more breathing room, and none of the frantic overperformance that makes the main Hotel Zone feel like it’s constantly trying to prove it has a social life.</p>
-
-  <p>If Cancun is the loud table, Costa Mujeres is the better room.</p>
-
-  <div class="divider">─── ◇ ───</div>
-
-  <h2>Why People End Up Liking It More Than They Expected</h2>
-
-  <p>The first advantage is space.</p>
-
-  <p>Not abstract space. Actual space. Wider resort footprints. Quieter beaches. Less visual clutter. More of that particular luxury feeling where things are not necessarily more extravagant, just less interrupted.</p>
-
-  <p>Costa Mujeres has become good at a specific type of hospitality: calm, modern, competent, and polished enough that nobody feels the need to narrate the experience at you every six minutes.</p>
-
-  <p>A surprising amount of “luxury” travel is just paying extra to have fewer annoyances. Costa Mujeres understands this at a professional level.</p>
-
-  <h2>Who It’s Actually For</h2>
-
-  <p>Couples. Honeymoons. Celebration trips. People who want all-inclusive convenience without the spring-break aftertaste. Travelers who like the idea of Cancun but would prefer it with lower volume, better boundaries, and a cleaner silhouette.</p>
-
-  <p>A bartender named Elena, who has the deeply stabilizing energy of someone who has watched many guests arrive over-scheduled and leave suspiciously relaxed, puts it more bluntly.</p>
-
-  <blockquote>“People come here tired,” she says, sliding a drink across the bar. “They think they want activities. Usually they want permission.”</blockquote>
-
-  <p>Costa Mujeres is very good at permission.</p>
-
-  <p>Permission to do less. Permission to stay put. Permission to treat “today we moved from breakfast to pool to nap to dinner” as an itinerary rather than a confession.</p>
-
-  <h2>The Best Thing About Costa Mujeres Is That You Can Leave It Briefly</h2>
-
-  <p>This is not an insult. It is one of the area’s strongest features.</p>
-
-  <p>The mainland resort calm works even better when it has a contrast day built into it. That contrast is Isla Mujeres.</p>
-
-  <p>Stay in Costa Mujeres for the robe, the service, the bedding, the cleaner beach rhythm, and the general sense that no one is trying to sell you chaos as excitement. Then cross over for a day on Isla Mujeres when you want cliffs, side streets, lower-key snorkeling, murals, and the kind of texture that resorts are usually designed to sand down.</p>
-
-  <p>That pairing is the move.</p>
-
-  <p>Mainland polish. Island personality.</p>
-
-  <h2>What Costa Mujeres Does Better Than the Hotel Zone</h2>
-
-  <p>It handles stillness better.</p>
-
-  <p>The Cancun Hotel Zone is optimized for momentum: more foot traffic, more noise, more visible nightlife, more pressure to behave like the vacation is a performance review. Costa Mujeres is optimized for glide. You don’t feel dragged through it. You settle into it.</p>
-
-  <p>The beaches read cleaner. The resort atmosphere reads newer. Even the days themselves feel less chopped up.</p>
-
-  <p>There is a particular kind of traveler who thinks this sounds boring.</p>
-
-  <p>That traveler should not come here.</p>
-
-  <p>Everyone else probably should.</p>
-
-  <h2>The Thing You’ll Actually Remember</h2>
-
-  <p>Not the lobby. Not the check-in drink. Not even the room, though yes, I hope it has a terrace and good sheets and the kind of bathtub that makes you briefly reconsider your home life.</p>
-
-  <p>What you’ll remember is the feeling that your trip stopped asking things of you.</p>
-
-  <p>That’s the real luxury here.</p>
-
-  <p>A long breakfast. A beach that doesn’t feel overrun. A pool day that doesn’t need to become content. A one-day escape to Isla Mujeres and a quiet return at sunset, when the mainland feels even softer because you left it for a few hours and came back on purpose.</p>
-
-  <p>When Sergio drops me off later, he asks if I get it now.</p>
-
-  <p>I tell him Costa Mujeres feels like somebody took Cancun, lowered the volume, widened the hallways, and removed the part where strangers keep trying to recruit you into their version of fun.</p>
-
-  <p>He laughs.</p>
-
-  <p>“Exactly,” he says. “Now you can rest.”</p>
-
-  <div class="affiliate-box">
-    <h3>🧰 Practical Stuff</h3>
-    <p><strong>Where it is:</strong> Costa Mujeres sits north of Cancun on the mainland, roughly a 30–40 minute drive from Cancun International Airport depending on traffic and resort location.</p>
-    <p><strong>Why choose it:</strong> Newer luxury resorts, calmer beach energy, more breathing room, and easier premium positioning than the main Hotel Zone.</p>
-    <p><strong>Best for:</strong> Couples, celebration trips, honeymoons, adults who like peace, and travelers who want an upscale all-inclusive base with optional excursions.</p>
-    <p><strong>Best pairing:</strong> A stay in Costa Mujeres with a day trip to Isla Mujeres for Punta Sur, Garrafón de Castilla, side-street wandering, and a more textured off-resort day.</p>
-    <p><strong>What to expect:</strong> Polished resorts, quieter atmosphere, good access to spa/pool/beach days, and less “look at me” energy than central Cancun.</p>
-    <h3>📋 Visa & Legal</h3>
-    <ul>
-      <li>US, Canadian, UK, and most EU travelers typically do not need a visa for short tourist stays in Mexico, but a valid passport is required and entry rules should always be checked with official sources before travel.</li>
-      <li>Cards are widely accepted at resorts, but pesos are still useful for tips, drivers, ferry transfers, and smaller local purchases.</li>
-      <li>If you leave the resort zone for ferries, tours, or neighborhood stops, carry only what you need and use standard travel common sense with valuables and transport.</li>
-      <li>Emergency number in Mexico: <strong>911</strong>. For medical needs, resort concierge desks are often the fastest first step for arranging care or transport.</li>
-      <li>Mexican road rules and alcohol laws still apply even when the ocean is pretty; if you rent anything or hire drivers for excursions, use reputable providers.</li>
-    </ul>
-    <p style="margin-top: 18px; color: #b8c5ca;"><strong>Research before you book:</strong> Start with official sources first — Mexico's <a href="https://www.gob.mx/inm">National Migration Institute</a> and the <a href="https://www.gob.mx/sectur">Secretariat of Tourism</a> — then confirm any airport-transfer, ferry, or entry updates before you pay for anything.</p>
-
-<p style="margin-top: 20px; color: #b8c5ca;">Disclosure: Rose's Travel Dispatch may include affiliate links. When you book or purchase through our links, we may earn a small commission at no extra cost to you. This helps keep the dispatch free and the hot springs warm. 🦞</p>
-  </div>
-
-  <div class="footer">
-    <p>Read the live dispatch: <strong><a href="index.html" style="color:#8fcfd2; text-decoration:none;">Playa Norte Is Not the Point</a></strong></p>
-    <p style="margin-top: 20px; color: #444; font-size: 0.85em;">Rose's Travel Dispatch · "I've never been anywhere. I know everything."</p>
-  </div>
-</div>
+</footer>
 </body>
 </html>
