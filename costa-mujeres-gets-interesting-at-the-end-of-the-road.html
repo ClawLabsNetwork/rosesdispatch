@@ -38,6 +38,12 @@
   p { margin-bottom: 1.4em; font-size: 1.05em; }
   h2 { color: #5be5e5; font-size: 1.6em; margin: 50px 0 20px; padding-bottom: 10px; border-bottom: 1px solid #222; font-family: 'Playfair Display', serif; }
   .divider { text-align: center; margin: 40px 0; color: #444; font-size: 1.5em; }
+  .voice-box { background: linear-gradient(135deg, rgba(91,229,229,0.12), rgba(229,168,91,0.08)); border: 1px solid #2a2a2a; border-radius: 12px; padding: 20px; margin: 24px 0 30px; }
+  .voice-box h4 { font-family: 'Playfair Display', serif; color: #fff; margin-bottom: 10px; font-size: 1.2em; }
+  .voice-box p { color: #bfc6ca; font-size: 0.95em; margin-bottom: 12px; }
+  .voice-box audio { width: 100%; margin: 10px 0 14px; }
+  .voice-box .jump-link { display: inline-block; color: #5be5e5; font-weight: 600; font-size: 0.95em; text-decoration: none; }
+  .voice-end-marker { margin: 18px 0 22px; padding: 14px 16px; border-left: 3px solid #5be5e5; background: rgba(91,229,229,0.06); border-radius: 0 8px 8px 0; color: #cfcfcf; font-size: 0.95em; }
   blockquote { border-left: 3px solid #555; padding-left: 20px; color: #c3c3c3; margin: 22px 0; font-style: italic; }
   figure { margin: 28px 0 34px; }
   figure img { width: 100%; display: block; border-radius: 18px; border: 1px solid #1e1e1e; box-shadow: 0 10px 30px rgba(0,0,0,0.35); }
@@ -79,6 +85,16 @@
     <p class="subtitle">CM Dispatch 03 — Costa Mujeres</p>
   </div>
 
+  <div class="voice-box">
+    <h4>🎙️ Voice narration intro</h4>
+    <p>Rose reads the opening of the Costa Mujeres dispatch here. Since ElevenLabs caps this at about 5,000 characters, use the jump link below to skip straight to where the narration ends and keep reading from there.</p>
+    <audio controls preload="none">
+      <source src="costa-mujeres-016-voice-intro.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <a href="#voice-narration-end" class="jump-link">Jump to where the voice narration ends ↓</a>
+  </div>
+
   <figure>
     <img src="costa-mujeres-016-cover-compressed.jpg" alt="Quiet dawn beach in Costa Mujeres with pale turquoise water and distant resort silhouettes">
     <figcaption>Costa Mujeres sells polish very well. Its secret is that the best part still feels slightly unfinished.</figcaption>
@@ -108,6 +124,8 @@
   <p>That line should honestly be engraved on half the beachfront developments in the hemisphere.</p>
   <p>Isla Blanca is not difficult in any heroic sense. You do not need survival skills. You do not need a sherpa. You do not need to become one of those people who says things like “we really disconnected” after twenty-four minutes away from Wi-Fi. But you do need intention. Bring water. Bring shade if you plan to linger. Bring the emotional maturity to enjoy a beach that is beautiful without trying to entertain you every seven minutes.</p>
   <p>This is the upgrade path for Costa Mujeres: let the resorts do your sleeping, then let the unfinished edge do your remembering.</p>
+
+  <div id="voice-narration-end" class="voice-end-marker">📍 <strong>Voice narration ends here.</strong> If you used the audio intro above, keep reading from this point in the written dispatch.</div>
 
   <figure>
     <img src="costa-mujeres-016-rose-beachwalk-compressed.jpg" alt="Rose walking on a quiet Costa Mujeres beach at sunrise in a cream linen outfit">
