@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <title>Rose's Travel Dispatch — Costa Mujeres Guide + Dispatches</title>
-<meta name="description" content="A polished Costa Mujeres + Isla Mujeres destination page with three Rose's Travel Dispatch features, a full guide, and the smarter mainland-island pairing.">
+<meta name="description" content="Costa Mujeres guide hub with a featured 30-question quick-answer page, two Costa Mujeres dispatches, the Isla Mujeres pairing, and the full mainland-island trip guide.">
 <meta name="robots" content="index, follow">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -67,10 +67,19 @@
   .hero-visual img { width: 100%; height: 330px; object-fit: cover; border-radius: 18px; border: 1px solid #1f1f1f; }
   .visual-caption { color: var(--muted); font-size: 0.96em; }
 
-  .quick-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 26px 0 60px; }
+  .quick-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 26px 0 28px; }
   .quick-card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 18px; }
   .quick-card .label { display: block; color: #fff; font-size: 0.85em; letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 6px; font-weight: 700; }
   .quick-card .value { color: var(--muted); font-size: 0.97em; }
+  .feature-callout { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 18px; margin: 0 0 60px; }
+  .feature-card, .feature-side { background: linear-gradient(180deg, #141414 0%, #101010 100%); border: 1px solid var(--line); border-radius: 22px; }
+  .feature-card { padding: 28px; }
+  .feature-kicker { color: var(--accent); font-size: 0.82em; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; }
+  .feature-card h3 { font-family: 'Playfair Display', serif; color: #fff; font-size: 2em; margin: 10px 0 12px; }
+  .feature-card p, .feature-side p { color: var(--muted); }
+  .feature-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
+  .feature-side { padding: 24px; display: flex; flex-direction: column; justify-content: center; }
+  .feature-side h4 { font-family: 'Playfair Display', serif; color: #fff; font-size: 1.3em; margin-bottom: 10px; }
 
   .section { margin-bottom: 64px; }
   .section-title { font-family: 'Playfair Display', serif; font-size: 2.2em; color: #fff; margin-bottom: 14px; }
@@ -116,15 +125,15 @@
   .footer .links { display: flex; justify-content: center; flex-wrap: wrap; gap: 18px; margin-bottom: 12px; }
 
   @media (max-width: 960px) {
-    .hero-grid, .quick-grid, .dispatch-grid, .editorial-grid { grid-template-columns: 1fr 1fr; }
+    .hero-grid, .quick-grid, .dispatch-grid, .editorial-grid, .feature-callout { grid-template-columns: 1fr 1fr; }
   }
   @media (max-width: 700px) {
     nav .container { align-items: flex-start; }
     .nav-links { gap: 16px; }
     .hero { padding-top: 44px; }
-    .hero-grid, .quick-grid, .dispatch-grid, .editorial-grid { grid-template-columns: 1fr; }
+    .hero-grid, .quick-grid, .dispatch-grid, .editorial-grid, .feature-callout { grid-template-columns: 1fr; }
     .hero h1 { font-size: 2.35em; }
-    .hero-copy, .hero-visual { padding: 24px; }
+    .hero-copy, .hero-visual, .feature-card, .feature-side { padding: 24px; }
     .hero-visual img { height: 250px; }
   }
 </style>
@@ -151,10 +160,10 @@
         <p class="eyebrow">Costa Mujeres · Mexico</p>
         <h1>Costa Mujeres, now with a trilogy</h1>
         <p class="sub">If the Hotel Zone is performance, Costa Mujeres is recovery with better linens and one excellent unfinished edge.</p>
-        <p class="lede">This page is the Costa Mujeres + Isla Mujeres hub: the destination guide, CM Dispatch 01, CM Dispatch 02, the new CM Dispatch 03, and the island companion piece that makes the whole trip smarter.</p>
+        <p class="lede">This page is the Costa Mujeres + Isla Mujeres hub: start with the new 30-question quick-answer page, then move through CM Dispatch 01, CM Dispatch 02, the new CM Dispatch 03, the island companion piece, and the full guide below.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#dispatches">Read the coast + island dispatches</a>
-          <a class="btn btn-secondary" href="#guide">Jump to the guide</a>
+          <a class="btn btn-primary" href="where-is-the-costa-mujeres/">Start with the quick-answer page</a>
+          <a class="btn btn-secondary" href="#dispatches">Browse all coast + island pieces</a>
         </div>
         <div class="hero-note"><strong>Rose's take:</strong> Costa Mujeres is not for people chasing visible chaos. It is for people who want their vacation to stop asking things of them.</div>
       </div>
@@ -170,6 +179,22 @@
     <div class="quick-card"><span class="label">Main advantage</span><span class="value">Less friction: quieter beaches, newer resorts, calmer pacing, cleaner vacation energy.</span></div>
     <div class="quick-card"><span class="label">Smart pairing</span><span class="value">One day trip to Isla Mujeres for texture or a shorter run north to Isla Blanca for wind, space, and less curated coastline.</span></div>
     <div class="quick-card"><span class="label">Airport reality</span><span class="value">Usually around 30–40 minutes from Cancun airport depending on traffic and your resort.</span></div>
+  </section>
+
+  <section class="feature-callout" aria-label="Featured Costa Mujeres quick answer">
+    <div class="feature-card">
+      <span class="feature-kicker">Start here</span>
+      <h3>Costa Mujeres · Quick answer</h3>
+      <p>The cleanest search-intent page on the hub: 30 grouped questions covering where Costa Mujeres is, airport distance, Cancun vs Playa Mujeres vs Isla Mujeres, beach calm, ferry logistics, weather, and whether this coast is actually the right fit.</p>
+      <div class="feature-actions">
+        <a class="btn btn-primary" href="where-is-the-costa-mujeres/">Open the 30-question page</a>
+        <a class="btn btn-secondary" href="#dispatches">Then read the dispatches</a>
+      </div>
+    </div>
+    <div class="feature-side">
+      <h4>Best use of this hub</h4>
+      <p>Use the quick-answer page first if you are still deciding what Costa Mujeres even is. Use the dispatches after that if you want the mood, the argument, and the version with better lighting.</p>
+    </div>
   </section>
 
   <section class="section" id="dispatches">
@@ -190,10 +215,10 @@
         <img src="costa-mujeres-pool-bar.jpg" alt="Quiet Costa Mujeres resort pool and beach view at blue hour">
         <div class="card-body">
           <span class="kicker">Quick answer</span>
-          <h3>Where Is Costa Mujeres?</h3>
-          <div class="meta">📍 Quintana Roo, Mexico</div>
-          <p>The clear location page for people trying to place Costa Mujeres on the map before they decide whether it is their kind of trip.</p>
-          <span class="cta">Read the straight answer →</span>
+          <h3>Costa Mujeres · Quick answer</h3>
+          <div class="meta">📍 30 grouped questions answered</div>
+          <p>The featured start-here page for people comparing Costa Mujeres with Cancun, Playa Mujeres, and Isla Mujeres before they commit to a resort stay.</p>
+          <span class="cta">Open the quick-answer page →</span>
         </div>
       </a>
       <a href="costa-mujeres-where-cancun-goes-to-lower-its-voice.html" class="dispatch-card">
