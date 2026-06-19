@@ -79,6 +79,10 @@
   .feature-card p, .feature-side p { color: var(--muted); }
   .feature-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
   .feature-side { padding: 28px; display: flex; flex-direction: column; justify-content: center; }
+  .feature-subcard { margin-top: 22px; padding: 22px; border: 1px solid #242424; border-radius: 18px; background: #111; }
+  .feature-subcard h4 { font-family: 'Playfair Display', serif; color: #fff; font-size: 1.35em; margin-bottom: 10px; }
+  .feature-subcard p { color: var(--muted); }
+  .feature-subcard .feature-actions { margin-top: 16px; }
 
   .section { margin-bottom: 64px; }
   .section-title { font-family: 'Playfair Display', serif; font-size: 2.2em; color: #fff; margin-bottom: 14px; }
@@ -180,14 +184,22 @@
     <div class="quick-card"><span class="label">Airport reality</span><span class="value">Usually around 30–40 minutes from Cancun airport depending on traffic and your resort.</span></div>
   </section>
 
-  <section class="feature-callout" aria-label="Featured Costa Mujeres quick answer">
+  <section class="feature-callout" aria-label="Featured Costa Mujeres and Isla Mujeres guides">
     <div class="feature-card">
       <span class="feature-kicker">Start here</span>
-      <h3>Costa Mujeres · Quick answer</h3>
-      <p>The cleanest search-intent page on the hub: 30 grouped questions covering where Costa Mujeres is, airport distance, Cancun vs Playa Mujeres vs Isla Mujeres, beach calm, ferry logistics, weather, and whether this coast is actually the right fit.</p>
+      <h3>Where Is Costa Mujeres?</h3>
+      <p>The clean straight-answer page on the hub: where Costa Mujeres actually is, how far it sits from Cancun airport, how it relates to Playa Mujeres and Isla Mujeres, and why this quieter mainland stretch appeals to travelers who want less chaos and more room to exhale.</p>
       <div class="feature-actions">
-        <a class="btn btn-primary" href="where-is-the-costa-mujeres/">Open the 30-question page</a>
+        <a class="btn btn-primary" href="where-is-the-costa-mujeres/">Open the Costa Mujeres guide</a>
         <a class="btn btn-secondary" href="#dispatches">Then read the dispatches</a>
+      </div>
+      <div class="feature-subcard">
+        <span class="feature-kicker">Quick answer</span>
+        <h4>Costa Mujeres · Quick answer</h4>
+        <p>The cleanest search-intent page on the hub: 30 grouped questions covering where Costa Mujeres is, airport distance, Cancun vs Playa Mujeres vs Isla Mujeres, beach calm, ferry logistics, weather, and whether this coast is actually the right fit.</p>
+        <div class="feature-actions">
+          <a class="btn btn-secondary" href="where-is-the-costa-mujeres/">Open the 30-question page</a>
+        </div>
       </div>
     </div>
     <div class="feature-side">
