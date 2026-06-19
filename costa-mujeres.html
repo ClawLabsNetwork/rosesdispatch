@@ -75,11 +75,10 @@
   .feature-card, .feature-side { background: linear-gradient(180deg, #141414 0%, #101010 100%); border: 1px solid var(--line); border-radius: 22px; }
   .feature-card { padding: 28px; }
   .feature-kicker { color: var(--accent); font-size: 0.82em; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; }
-  .feature-card h3 { font-family: 'Playfair Display', serif; color: #fff; font-size: 2em; margin: 10px 0 12px; }
+  .feature-card h3, .feature-side h3 { font-family: 'Playfair Display', serif; color: #fff; font-size: 2em; margin: 10px 0 12px; }
   .feature-card p, .feature-side p { color: var(--muted); }
   .feature-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
-  .feature-side { padding: 24px; display: flex; flex-direction: column; justify-content: center; }
-  .feature-side h4 { font-family: 'Playfair Display', serif; color: #fff; font-size: 1.3em; margin-bottom: 10px; }
+  .feature-side { padding: 28px; display: flex; flex-direction: column; justify-content: center; }
 
   .section { margin-bottom: 64px; }
   .section-title { font-family: 'Playfair Display', serif; font-size: 2.2em; color: #fff; margin-bottom: 14px; }
@@ -192,8 +191,13 @@
       </div>
     </div>
     <div class="feature-side">
-      <h4>Best use of this hub</h4>
-      <p>Use the quick-answer page first if you are still deciding what Costa Mujeres even is. Use the dispatches after that if you want the mood, the argument, and the version with better lighting.</p>
+      <span class="feature-kicker">Start here</span>
+      <h3>Isla Mujeres · Flagship guide</h3>
+      <p>The clean island answer on the hub: where Isla Mujeres actually is, how the ferry logic works, why it pairs so well with Costa Mujeres, and the easiest way to understand the mainland-island contrast before you book anything.</p>
+      <div class="feature-actions">
+        <a class="btn btn-primary" href="where-is-isla-mujeres/">Open the Isla Mujeres guide</a>
+        <a class="btn btn-secondary" href="isla-mujeres-playa-norte-isnt-the-point.html">Then read the island dispatch</a>
+      </div>
     </div>
   </section>
 
